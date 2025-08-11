@@ -916,6 +916,96 @@
         </div>
     </section>
 
+
+        <!-- فورم التسجيل -->
+    <section class="container">
+        <div class="form-section" id="registrationForm">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>انضم إلينا اليوم</h3>
+                    <p>املأ النموذج التالي وسنقوم بالتواصل معك قريباً لتكون من أوائل المستفيدين من منصتنا التعليمية</p>
+                </div>
+                
+                <!-- الفورم المدمج -->
+                <form id="registrationForm"
+                      action="https://formspree.io/f/mzzvykyl"
+                      method="post"
+                      target="hidden_iframe"
+                      class="custom-form" >
+
+                    <div class="form-group">
+                        <label for="fullName">الاسم بالكامل *</label>
+                        <input type="text" id="fullName" name="الاسم بالكامل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="البريد الإلكتروني" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">رقم الموبايل *</label>
+                        <input type="tel" id="phone" name="رقم الموبايل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userType">النوع *</label>
+                        <select id="userType" name="النوع" required>
+                            <option value="">اختر...</option>
+                            <option value="مدرس">مدرس</option>
+                            <option value="طالب">طالب</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">المحافظة *</label>
+                        <select id="location" name="المحافظة" required>
+                            <option value="" selected>اختر...</option>
+                            <option value="أسيوط">أسيوط</option>
+                            <option value="القاهرة">القاهرة</option>
+                            <option value="الجيزة">الجيزة</option>
+                            <option value="المنيا">المنيا</option>
+                            <option value="سوهاج">سوهاج</option>
+                            <option value="سوهاج">اخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="educationLevel">المستوى التعليمي *</label>
+                        <select id="educationLevel" name="المستوى التعليمي" required>
+                            <option value="">اختر...</option>
+                            <option value="ثانوي">ثانوي</option>
+                            <option value="كلية">كلية</option>
+                            <option value="إعدادي">إعدادي</option>
+                            <option value="ابتدائي">ابتدائي</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">الكلية/المدرسة *</label>
+                        <input type="text" id="institution" name="الكلية/المدرسة" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">المادة أو التخصص *</label>
+                        <input type="text" id="subject" name="المادة أو التخصص" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية</label>
+                        <textarea id="notes" name="ملاحظات إضافية"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">سجل الآن</button>
+                    </div>
+
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- لماذا doroshub؟ -->
     <section class="container">
         <h2 class="section-title">ليه doroshub؟</h2>
@@ -1063,94 +1153,7 @@
         </div>
     </section>
 
-    <!-- فورم التسجيل -->
-    <section class="container">
-        <div class="form-section" id="registrationForm">
-            <div class="form-container">
-                <div class="form-header">
-                    <h3>انضم إلينا اليوم</h3>
-                    <p>املأ النموذج التالي وسنقوم بالتواصل معك قريباً لتكون من أوائل المستفيدين من منصتنا التعليمية</p>
-                </div>
-                
-                <!-- الفورم المدمج -->
-                <form id="registrationForm"
-                      action="https://formspree.io/f/mzzvykyl"
-                      method="post"
-                      target="hidden_iframe"
-                      class="custom-form" >
 
-                    <div class="form-group">
-                        <label for="fullName">الاسم بالكامل *</label>
-                        <input type="text" id="fullName" name="الاسم بالكامل" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">البريد الإلكتروني *</label>
-                        <input type="email" id="email" name="البريد الإلكتروني" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">رقم الموبايل *</label>
-                        <input type="tel" id="phone" name="رقم الموبايل" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="userType">النوع *</label>
-                        <select id="userType" name="النوع" required>
-                            <option value="">اختر...</option>
-                            <option value="مدرس">مدرس</option>
-                            <option value="طالب">طالب</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="location">المحافظة *</label>
-                        <select id="location" name="المحافظة" required>
-                            <option value="" selected>اختر...</option>
-                            <option value="أسيوط">أسيوط</option>
-                            <option value="القاهرة">القاهرة</option>
-                            <option value="الجيزة">الجيزة</option>
-                            <option value="المنيا">المنيا</option>
-                            <option value="سوهاج">سوهاج</option>
-                            <option value="سوهاج">اخرى</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="educationLevel">المستوى التعليمي *</label>
-                        <select id="educationLevel" name="المستوى التعليمي" required>
-                            <option value="">اختر...</option>
-                            <option value="ثانوي">ثانوي</option>
-                            <option value="كلية">كلية</option>
-                            <option value="إعدادي">إعدادي</option>
-                            <option value="ابتدائي">ابتدائي</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="institution">الكلية/المدرسة *</label>
-                        <input type="text" id="institution" name="الكلية/المدرسة" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">المادة أو التخصص *</label>
-                        <input type="text" id="subject" name="المادة أو التخصص" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="notes">ملاحظات إضافية</label>
-                        <textarea id="notes" name="ملاحظات إضافية"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">سجل الآن</button>
-                    </div>
-
-                    <div id="formMessage" class="form-message"></div>
-                </form>
-            </div>
-        </div>
-    </section>
     <!-- الأسئلة الشائعة -->
     <section class="container">
         <h2 class="section-title">أسئلة شائعة</h2>
@@ -1183,6 +1186,15 @@
                     </div>
                     <div class="faq-answer">
                         <p>في حالة الشكاوى خلال 48 ساعة بنراجع ونطبق سياسة الاسترداد اللي واضحه في شروط الاستخدام.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        متى موعد التسجيل الرسمي وانطلاق المنصه؟
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الإطلاق قريب جدًا! سجّل الآن كطالب أو مدرس وكن من الأوائل على DorosHub لتحصل على مزايا خاصة عند البداية.</p>
                     </div>
                 </div>
             </div>
